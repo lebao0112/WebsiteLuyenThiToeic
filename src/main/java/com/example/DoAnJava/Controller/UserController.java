@@ -14,11 +14,14 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")
 @RequiredArgsConstructor
 public class UserController {
+
     private final UserService userService;
+
     @GetMapping("/login")
     public String login() {
         return "users/login";
     }
+
     @GetMapping("/register")
     public String register(@NotNull Model model) {
         model.addAttribute("user", new User());
