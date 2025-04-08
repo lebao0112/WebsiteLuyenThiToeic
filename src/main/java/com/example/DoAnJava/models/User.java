@@ -48,8 +48,8 @@ public class User implements UserDetails {
     private String confirmPassword;
 
     @Column(name = "phone", length = 10, unique = true)
-    @Length(min = 10, max = 10, message = "PhoneNumber must be 10 characters")
-    @Pattern(regexp = "^[0-9]*$", message = "PhoneNumber must be number")
+    @Length(min = 10, max = 10, message = "Phone must be 10 characters")
+    @Pattern(regexp = "^[0-9]*$", message = "Phone must be number")
     private String phone;
 
     @Column(name = "provider", length = 50)
