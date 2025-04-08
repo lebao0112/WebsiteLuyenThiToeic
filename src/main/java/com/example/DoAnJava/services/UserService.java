@@ -24,7 +24,7 @@ public class UserService implements UserDetailsService {
     @Autowired
     private IRoleRepository roleRepository;
 
-    // Lưu người dùng mới vào cơ sở dữ liệu sau khi mã hóa mật khẩu.
+    // Lưu người dùng mới vào cơ sở dữ liệu sau khi mã hóa mật khẩu và mã hóa mật khẩu người dùng.
     public void save(@NotNull User user) {
         user.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
         userRepository.save(user);
