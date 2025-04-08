@@ -18,7 +18,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
     //Cau hinh bao mat
     private final UserService userService; // Tiêm UserService vào lớp cấu hình này.
-    @Bean // Đánh dấu phương thức trả về một bean được quản lý bởi Spring Context.
+    @Bean /
     public UserDetailsService userDetailsService() {
         return new UserService(); // Cung cấp dịch vụ xử lý chi tiết người dùng.
     }
