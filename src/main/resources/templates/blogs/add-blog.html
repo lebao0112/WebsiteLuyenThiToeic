@@ -8,6 +8,7 @@
 </head>
 <body>
 <section layout:fragment="content" class="container mt-5">
+<!--    title content-->
     <h1>Add New Blog</h1>
     <form th:action="@{/admin/blogs/add}" th:object="${blog}" method="post" class="needs-validation" novalidate>
         <div class="mb-3">
