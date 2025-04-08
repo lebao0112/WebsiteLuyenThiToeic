@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 @RequiredArgsConstructor
 public class BlogController {
-
+//update
     @Autowired // Có thể sử dụng @Autowired hoặc constructor injection
     private final BlogService blogService;
     private final CategoryService categoryService;
