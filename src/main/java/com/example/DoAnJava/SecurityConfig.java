@@ -34,6 +34,7 @@ public class SecurityConfig {
         auth.setPasswordEncoder(passwordEncoder()); // Thiết lập cơ chế mã hóa mật khẩu.
         return auth; // Trả về nhà cung cấp xác thực.
     }
+    //add
     // Cấu hình cookie de luu dang nhap cho nguoi dung
     @Bean
     public SecurityFilterChain securityFilterChain(@NotNull HttpSecurity http) throws Exception {
