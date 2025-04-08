@@ -22,6 +22,7 @@ public class SecurityConfig {
     public UserDetailsService userDetailsService() {
         return new UserService(); // Cung cấp dịch vụ xử lý chi tiết người dùng.
     }
+    //pwd encoder
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder(); // Bean mã hóa mật khẩu sử dụng BCrypt.
