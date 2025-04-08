@@ -40,7 +40,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(@NotNull HttpSecurity http) throws Exception {
 
         return http
-                .csrf(csrf -> csrf.disable())
+                .csrf(csrf -> csrf.disable()) //tat csrf
                 .authorizeHttpRequests(auth -> auth
 
                         .requestMatchers("/css/**", "/js/**", "/", "/oauth/**", "/register", "/error","/assets/**","/icomoon/**","/js/**","/flashcards/list/**",
